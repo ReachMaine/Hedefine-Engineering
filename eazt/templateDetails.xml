@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 3.0//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="3.0" type="template" client="site">
+	<name>eaz</name>
+	<author>Linda Speight</author>
+	<authorEmail>support@ellsworthamerican.com</authorEmail>
+	<authorUrl>http://eaonline.info/</authorUrl>
+	<copyright>Copyright (C) 2013 Ellsworth American</copyright>
+	<version>1.0</version>
+	<description>eaz Ellsworth American Template by zig</description>
+
+	<files>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>html</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+	<positions>
+		<position>site-header</position>
+		<position>left-panel</position>
+		<position>center-top</position>
+		<position>showcase</position>
+		<position>main-top</position>
+		<position>left-sidebar</position>
+		<position>right-sidebar</position>
+		<position>content-top</position>
+		<position>content-bottom</position>
+		<position>center-bottom</position>
+		<position>right-panel</position>
+		<position>footer</position>
+	</positions>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_eaz.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_eaz.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field 
+					name="site-width" 
+					type="text" 
+					default="1100"
+					label="site width in px:"
+					description="site panel width"
+					filter="string">
+				</field>
+				<field 
+					name="left-panel-width" 
+					type="text" 
+					default="0"
+					label="left panel width in px:"
+					description="left panel width"
+					filter="string">
+				</field>
+				<field 
+					name="right-panel-width" 
+					type="text" 
+					default="0"
+					label="right panel width in px:"
+					description="right panel width"
+					filter="string">
+				</field>
+				<field 
+					name="center-panel-width" 
+					type="text" 
+					default="900"
+					label="center panel width (content + sidebars) px:"
+					description="center panel width"
+					filter="string">
+				</field>
+				<field 
+					name="left-sidebar-width" 
+					type="text" 
+					default="0"
+					label="left sidebar width px:"
+					description="left sidebar width"
+					filter="string">
+				</field>
+				<field 
+					name="right-sidebar-width" 
+					type="text" 
+					default="0"
+					label="right sidebar width px:"
+					description="right sidebar width"
+					filter="string">
+				</field>
+
+				<field 
+					name="content-width" 
+					type="text" 
+					default="0"
+					label="content width px:"
+					description="content width"
+					filter="string">
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

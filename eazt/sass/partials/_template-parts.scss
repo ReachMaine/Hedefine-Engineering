@@ -1,0 +1,136 @@
+
+/* widths of template parts */
+$site-width: 994px;  // left panel + center panel + right panel
+$left-panel-size: 0px;
+$right-panel-size: 0px;
+$center-panel-size: 994px; // includes left side + content size + right sidebar
+$content-size: 994px;
+$left-sidebar-size: 0px; 
+$right-sidebar-size: 0px;
+/* heights of template parts */
+//$showcase-ht: 193px;
+
+$content-bkg: #FFFFFF;
+body {
+	background-color: $site-bkgd-color;
+	height: 100%;
+	font-family: Verdana, Geneva, sans-serif;
+//	font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+	font-size: 12px;
+}
+#site-wrapper {
+	width: $site-width;
+	margin:auto;
+}
+#left-panel-wrapper {
+	width: $left-panel-size;
+	//min-height: 600px;
+	height: 100%;
+	float: left;
+	
+}
+#center-panel-wrapper {
+	background-color: $content-bkg;
+	float:left;
+	width: $center-panel-size;
+	#showcase-wrapper {
+		clear: both;
+		width: 100%;
+		//height: $showcase-ht;
+		#showcase {
+			.fpss-container {
+				margin: 0px;
+				border: 0px;
+			}
+		}
+		
+	}
+	#main-top-wrapper {
+		width: 100%;
+		clear: both;
+		#main-top {
+			height: 40px;
+			border-bottom: 1px grey solid;
+			.nav {
+				padding-top: 10px;
+				padding-right: 5px;
+				float:right;
+				font-size: 18px;
+				line-height: 20px;
+				li {
+					display: inline;
+					margin: 4px;
+					padding: 6px;
+				}
+				li.current.active {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	#content-area-wrapper {
+		width: 100%;
+		clear: both;
+		#content-top-wrapper {
+			clear: both;
+			width: 100%;
+		}
+		#left-sidebar-wrapper {
+			float: left;
+			width: $left-sidebar-size;
+		}
+		#main-content-wrapper {
+			float:left;
+			//width: $content-size;
+			#main-content {
+				//width: inherit;
+				//clear: both;
+				//padding-top: 10px;
+				margin: 10px 56px;
+			}
+		}
+		#right-sidebar-wrapper {
+			float: left;
+			width: $right-sidebar-size;
+		}
+		#content-bottom-wrapper {
+			clear: both;
+			width: 100%;
+			#content-bottom {
+				padding: 10px 56px; // same as main-content
+			}
+		}
+	
+	}
+	
+	#center-bottom-wrapper {
+		clear: both;
+		width: 100%;
+	}
+} /* end of center panel */
+#right-panel-wrapper {
+	//width: $right-panel-size;
+	//background: url(../images/right-panelback.jpg) repeat-y ;
+	//min-height: 600px;
+	//float: left;
+}
+footer {
+	clear: both;
+	background-color: $footer-color;
+	height: 35px;
+}
+#copyright-wrapper {
+	width: 100%;
+	padding-top: 10px;
+	color: whitesmoke;
+
+	#copyright {
+		font-size:10px;
+		float: left;
+		padding-left: 10px;
+	}
+	#ea-logo {
+		float: right;
+		padding-right: 10px;
+	}
+}

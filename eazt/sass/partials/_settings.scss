@@ -1,0 +1,125 @@
+/* Colors ---------------------------------------------- */
+$linkcolor: #0d4c9c; //#304E8C;//
+$linkhovercolor: #3F7EC5;//#668FE2;
+$fontcolor: #333;
+$site-bkgd-color:#0B3972; // <- our favorite// #173965 - a little darker & duller // #0d4c9c - orginal (too bright for eero) 
+$leftpanel-bkgrnd: #660000;
+$leftnav-color: #000000;
+$leftnav-hovercolor: #BEBEBE;
+$footer-color: #000;
+$grey-border-color: #808080;
+$page-title-color: #3F7EC5;
+$address-green-color: #6A8D75;
+
+/* Typography ------------------------------------------ */
+
+$sans: Geneva, Arial, Helvetica, sans-serif;
+$serif: Georgia, "Times New Roman", Times, serif;
+
+/* General Tags ---------------------------------------- */
+body {
+	color: $fontcolor;
+}
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
+}
+.pull-right {
+	float:right;
+}
+
+h1 {
+	 font-size: 24px;
+	 line-height: 28px;
+	font-weight: normal;
+	margin: 4px 0;
+}
+h2 {
+	font-weight: bold;
+	line-height: 22px;
+	font-size: 18px;
+	padding: 5px 0;
+}
+
+h3 {font-size:16px;line-height: 18px;font-weight: 900;padding: 5px 0;}
+
+h4 {font-size:13px;line-height: 15px;font-weight: 900;padding: 5px 0;}
+
+h5 {font-size:12px;line-height: 14px;font-weight: 900;padding: 5px 0;}
+
+h6 {font-size:11px;line-height: 13px;font-weight: 900;padding: 5px 0;}
+
+
+a, a:visited {
+	color: $linkcolor;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	color: $linkhovercolor;
+	text-decoration: underline;
+}
+
+a.image, a.image:hover  {border:0;}
+
+#main-content {
+
+	p, ol, ul, dl {
+		padding: 5px 0;
+		font-size: 14px;
+		line-height: 22px;
+	}
+	p {
+		padding-bottom: 25px;
+	}
+	ul {
+		list-style-position: inside;
+		list-style-type: disc;
+		margin: 10px 24px
+	}
+	ol {
+		list-style-position: inside;
+		list-style-type: decimal;
+		margin: 10px 24px
+
+	}
+	ol li, ul li {
+		padding: 5px 0px;
+	}
+	 .contact dl.contact-address {
+		//font-size: 15px;
+		//line-height: 20px;
+		
+	} 
+}
+
+#left-panel {
+	.nav {
+		a {
+			color: white;
+		}
+		a:hover {
+			color: $leftnav-hovercolor;
+		}
+	}
+}
+
+.span4 {
+	width: 32%;
+	float: left;
+}
+.items-row {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.clearfix {
+	clear: both;
+}
+.padl20 {
+	padding-left: 20px;
+}
